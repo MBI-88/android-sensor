@@ -4,44 +4,39 @@ import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
-import androidx.compose.foundation.layout.fillMaxSize
-import androidx.compose.foundation.layout.padding
-import androidx.compose.material3.Scaffold
-import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
-import androidx.compose.ui.Modifier
+
 import androidx.compose.ui.tooling.preview.Preview
-import com.mbi.android_sensor.ui.theme.AndroidsensorTheme
+import com.mbi.android_sensor.components.SensorUI
+import com.mbi.android_sensor.ui.theme.SensorTheme
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContent {
-            AndroidsensorTheme {
-                Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
-                    Greeting(
-                        name = "Android",
-                        modifier = Modifier.padding(innerPadding)
-                    )
-                }
+            SensorTheme {
+                SensorUI()
             }
         }
     }
 }
 
+
+// Dark theme
+@Preview
 @Composable
-fun Greeting(name: String, modifier: Modifier = Modifier) {
-    Text(
-        text = "Hello $name!",
-        modifier = modifier
-    )
+fun SensorUIDarkPreview() {
+    SensorTheme (darkTheme = true) {
+        SensorUI()
+    }
 }
 
-@Preview(showBackground = true)
+// Light theme
+@Preview
 @Composable
-fun GreetingPreview() {
-    AndroidsensorTheme {
-        Greeting("Android")
+fun SensorUILightPreview() {
+    SensorTheme (darkTheme = false) {
+        SensorUI()
     }
 }
