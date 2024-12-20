@@ -6,4 +6,9 @@
     <string name="set_temp">Set</string>
     <string name="start_sensor">Update</string>
     <string name="current_temp">Temperature</string>
+    <string name="info">Tarea de la asignatura IoT de la UNIR.</string>
+    <string name="author">Autor: Maikel Barrios Insua.</string>
+    <string name="description_1">Android sensor es una aplicacion para sensar la temperatura del dispositivo</string>
+    <string name="description_2">es una prueba usando numeros aleatoreos para simular la temperatura. </string>
+    <string name="go">Siguiente</string>
 </resources>
