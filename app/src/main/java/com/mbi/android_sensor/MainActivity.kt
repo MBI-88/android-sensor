@@ -55,7 +55,7 @@ fun SensorInfo() {
     val context = LocalContext.current
     Column (
         modifier = Modifier
-            .padding(dimensionResource(R.dimen.padding_small))
+            .padding(dimensionResource(R.dimen.padding_medium))
             .fillMaxWidth().fillMaxHeight(),
         horizontalAlignment = Alignment.CenterHorizontally,
         verticalArrangement = Arrangement.Center,
@@ -68,14 +68,7 @@ fun SensorInfo() {
             text = stringResource(R.string.author),
             style = MaterialTheme.typography.titleLarge
         )
-        Text(
-            text = stringResource(R.string.description_1),
-            style = MaterialTheme.typography.titleLarge
-        )
-        Text(
-            text = stringResource(R.string.description_2),
-            style = MaterialTheme.typography.titleLarge
-        )
+
         Button(onClick = {
             val intent = Intent(context, SensorActivity::class.java)
             context.startActivity(intent)
