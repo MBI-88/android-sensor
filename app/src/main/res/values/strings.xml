@@ -1,8 +1,9 @@
 <resources>
     <string name="app_name">android-sensor</string>
     <string name="title">Android Sensor</string>
-    <string name="max_temp">Temperature maximum initial</string>
-    <string name="min_temp">Temperature minimum initial</string>
-    <string name="set_temp">Set Temperature</string>
-    <string name="start_sensor">Start sensor</string>
+    <string name="max_temp">Maximum temperature</string>
+    <string name="min_temp">Minimum temperature</string>
+    <string name="set_temp">Set</string>
+    <string name="start_sensor">Update</string>
+    <string name="current_temp">Temperature</string>
 </resources>
